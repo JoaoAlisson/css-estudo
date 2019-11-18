@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alisson Template</title>
+</head>
+<body>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.main-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+#main-bar-logo a, #main-menu li a  {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+#main-menu {
+        display: flex;
+        list-style: none;
+}
+
+#main-menu li a:hover, #main-bar-logo a:hover {
+    background-color: rgba(216, 208, 208, 0.1);
+}
+
+footer center {
+    height: 40px;
+    background-color: rgba(36, 36, 36, 0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    height: 500px;
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        grid-template-areas: 
+            "box1 box2 box3"
+            "box4 box5 box5"
+            "box6 box6 box6";
+    }
+
+    .col1 { grid-area: box1; }
+    .col2 { grid-area: box2; }
+    .col3 { grid-area: box3; }
+    .col4 { grid-area: box4; }
+    .col5 { grid-area: box5; }
+    .col6 { grid-area: box6; }
+    .col7 { grid-area: box7; }  
+}           
+
+.wrapper > div {  
+    background-color: rgb(31, 230, 48);
+    border: 1px solid #333;
+    padding: 5px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper > div:nth-child(odd) {
+    background-color: rgb(8, 248, 248);
+}
+</style>
+    
+<header>
+    <div class="main-bar">
+        <div id="main-bar-logo"><a href="#">ByBay</a></div>
+        <ul id="main-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Products</a></li>
+        </ul>
+    </div>  
+</header>
+<section class="main-section">
+
+    <div class="wrapper">
+        <div class="col1">Col 1</div>
+        <div class="col2">Col 2</div>
+        <div class="col3">Col 3</div>
+        <div class="col4">Col 4</div>
+        <div class="col5">Col 5</div>
+        <div class="col6"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, id!</p></div>
+    </div>  
+
+</section>
+<footer>
+    <center>Rodapé</center>
+</footer>
+</body>
+</html>

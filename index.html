@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Flex</title>
+</head>
+<style>
+        * {
+                margin: 0;
+                padding: 0;
+                box-sizing: content-box;
+                color: #333;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .main-bar {
+                display: flex;
+                justify-content: space-between;
+                background-color: #333;
+                position: sticky;
+                top: 0;
+        }
+
+        #main-bar-logo a, #main-menu li a  {
+                display: block;
+                padding: 1rem;
+                color: white;
+                text-decoration: none;
+                padding: 1rem;
+                font-size: 1.2rem;
+        }
+
+        #main-menu {
+                display: flex;
+                list-style: none;
+        }
+
+        #main-menu li a:hover, #main-bar-logo a:hover {
+                background-color: rgba(216, 208, 208, 0.1);
+        }
+
+        header {
+                height: 100vh;
+                background-color: aqua
+        }
+
+        .main-section {
+                height: 100vh;
+                background-color: green; 
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: end;
+                align-items: flex-end;
+                
+        }
+
+        footer {
+                height: 100vh;
+                background-color: red; 
+        }
+</style>
+<body>
+        <div class="main-bar">
+                <div id="main-bar-logo"><a href="#">ByBay</a></div>
+                        <ul id="main-menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Products</a></li>
+                        </ul>
+                </div>
+        <header>
+                
+        </header>
+        <section class="main-section">
+                <article>1</article>
+                <article>2</article>
+                <article>3</article>
+                <article>4</article>
+        </section>
+        <footer id="footer"></footer>
+</body>
+</html>
