@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabuleiro</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #tabuleiro {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        .casa {
+            background-color: #333;
+        }
+
+        .casa:nth-child(-2n+7), 
+        .casa:nth-child(9)  ~ div:nth-child(-2n+16), 
+        .casa:nth-child(16) ~ div:nth-child(-2n+23), 
+        .casa:nth-child(24) ~ div:nth-child(-2n+32), 
+        .casa:nth-child(31) ~ div:nth-child(-2n+39), 
+        .casa:nth-child(41) ~ div:nth-child(-2n+48), 
+        .casa:nth-child(48) ~ div:nth-child(-2n+55), 
+        .casa:nth-child(57) ~ div:nth-child(-2n+64) {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="tabuleiro"></div>
+
+    <script>
+        let tabuleiro = document.getElementById('tabuleiro');
+        for(let i = 1; i <= 64; i++) {
+            let casa = document.createElement('div');
+            casa.className = 'casa';
+            tabuleiro.appendChild(casa);
+        }
+    </script>
+</body>
+</html>
