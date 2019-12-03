@@ -1,0 +1,23 @@
+.menu ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+.container {
+    padding: 30px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+
+    grid-template-areas: 
+        "area-sidebar area-banner"
+        "area-sidebar area-content";
+}
+
+.sidebar { grid-area: area-sidebar; }
+.banner  { grid-area: area-banner; }
+.content { grid-area: area-content; }
+
+.mobile-only {
+    display: none;
+}
