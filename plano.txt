@@ -1,0 +1,22 @@
+GRID
+    - grid-template-columns (px, %, rem, em fr) repeat(3, 300%) repeat(auto-fil, 1fr) repeat(auto-fil, minmax(300px, 1fr))
+    - grid-template-rows
+    - grid-template-areas
+    - columns-gap, rows-gap, gap
+    - grid-column-start
+    - grid-column-end
+    - grid-column: 2/4
+    - grid-row-start
+    - grid-row-end
+    - grid-row: 2/4
+    - Alinhamentos:
+        JUSTIFY (Hor) e ALIGN (Vert)
+        Container:
+                justify-content
+                align-content
+        Itens: 
+                justify-items
+                align-items
+        Item:
+                justify-self
+                align-self

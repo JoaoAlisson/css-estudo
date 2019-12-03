@@ -4,52 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <link rel="stylesheet" href="public/css/grid.css">
+        <link rel="stylesheet" media="only screen and (min-width: 700px)" href="public/css/grid-desktop.css" /> -->
         <title>Grid Layout</title>
 </head>
 
 <style>
-        :root {
-                --font-color: #333;
-        }
-
         * {
                 padding: 0;
                 margin: 0;
                 box-sizing: content-box;
                 font-family: sans-serif;
-                color: var(--font-color);
+                color: #333;
         }
 
         .wrapper {
                 height: 100vh;
                 display: grid;
                 gap: 5px;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-
-                justify-items: center;
-                align-items: center;
-        }
-
-        .wrapper > div:nth-child(2) {
-                justify-self: start;
-                align-self: end;
-        }
+        }           
 
         .wrapper > div {  
-                background-color: rgb(8, 248, 248);
-                height: 100px;
-                width: 200px;
-                border: 1px solid var(--font-color);
+                background-color: rgb(31, 230, 48);
+                border: 1px solid #333;
                 padding: 5px;
 
                 display: grid;
                 justify-content: center;
-                align-content: center;
+                align-items: center;
+                text-align: center;
         }
 
         .wrapper > div:nth-child(odd) {
-                /* background-color: rgb(31, 230, 48); */
+                background-color: rgb(8, 248, 248);
         }
 
         /* .wrapper {
@@ -76,6 +63,31 @@
                 /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
         /* } */
 
+        /*      
+                Operadores: only, and, or
+                medias: all, braille, projection, screen, tv, print
+                min-resolution: 300pdi
+                orientation: portrait
+                color, min-color, monochrome
+        */
+
+        /* @media (min-width: 700px) {
+                .wrapper {
+                        grid-template-areas: 
+                        "box1 box2 box3"
+                        "box4 box5 box5"
+                        "box6 box6 box6";
+                }
+
+                .col1 { grid-area: box1; }
+                .col2 { grid-area: box2; }
+                .col3 { grid-area: box3; }
+                .col4 { grid-area: box4; }
+                .col5 { grid-area: box5; }
+                .col6 { grid-area: box6; }
+                .col7 { grid-area: box7; }  
+        } */
+
         /* 
                 Alinhamentos:
                         JUSTIFY e ALIGN
@@ -89,21 +101,6 @@
                                 justify-self
                                 align-self
         */
-
-        /* .wrapper {
-                grid-template-areas: 
-                "box1 box2 box3"
-                "box4 box5 box5"
-                "box6 box6 box6";
-        }
-
-        .col1 { grid-area: box1; }
-        .col2 { grid-area: box2; }
-        .col3 { grid-area: box3; }
-        .col4 { grid-area: box4; }
-        .col5 { grid-area: box5; }
-        .col6 { grid-area: box6; }   */
-
 </style>
 <body>
         <div class="wrapper">
@@ -113,9 +110,6 @@
                 <div class="col4">Col 4</div>
                 <div class="col5">Col 5</div>
                 <div class="col6"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, id!</p></div>
-                <div class="col7">Col 7</div>
-                <div class="col8">Col 8</div>
-                <div class="col9">Col 9</div>
         </div>  
 </body>
 </html>
