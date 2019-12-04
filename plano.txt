@@ -20,3 +20,16 @@ GRID
         Item:
                 justify-self
                 align-self
+
+
+
+Media Query
+        - Mobile first
+        - Operadores: 
+                not, or, and, only 
+        - Características dos dispositivos: 
+                width, height, resolution, orientation, color, monochrome
+        - Tipos de dispositivos:
+                all, screen, print, tv, speech, projection, braille
+        - Media query para carregar css 
+        - Media query para imagens
