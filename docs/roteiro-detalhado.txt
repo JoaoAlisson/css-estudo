@@ -1,4 +1,7 @@
+Diferença Flex x Grid
+
 GRID
+    - O que é a grid
     - grid-template-columns (px, %, rem, em fr) repeat(3, 300%) repeat(auto-fil, 1fr) repeat(auto-fil, minmax(300px, 1fr))
     - grid-template-rows
     - grid-template-areas
