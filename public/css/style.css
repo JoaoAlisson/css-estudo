@@ -59,8 +59,8 @@ footer center {
 }
 
 .container > div {  
-    background-color: rgb(31, 230, 48);
-    border: 1px solid var(--main-black);
+    background-color: #3498db;
+    color: white;
     padding: 5px;
 
     display: grid;

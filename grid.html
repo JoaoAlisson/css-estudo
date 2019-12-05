@@ -9,7 +9,7 @@
 
 <style>
         :root {
-                --font-color: #333;
+                --my-black: #333;
         }
 
         * {
@@ -17,31 +17,32 @@
                 margin: 0;
                 box-sizing: content-box;
                 font-family: sans-serif;
-                color: var(--font-color);
         }
 
         .container {
                 height: 100vh;
-                display: grid;
-                gap: 5px;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
+                /* display: grid; */
+                /* gap: 5px; */
+                border: 5px solid var(--my-black);
+                /* grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr); */
 
-                justify-items: center;
-                align-items: center;
+                /* justify-items: center;
+                align-items: center; */
         }
 
         .container > div:nth-child(2) {
-                justify-self: start;
-                align-self: end;
+                /* justify-self: start; */
+                /* align-self: end; */
         }
 
         .container > div {  
-                background-color: rgb(8, 248, 248);
-                height: 100px;
-                width: 200px;
-                border: 1px solid var(--font-color);
+                background-color: #3498db;
+                /* height: 100px;
+                width: 200px; */
                 padding: 5px;
+                color: white;
+                font-size: 40px;
 
                 display: grid;
                 justify-content: center;
@@ -49,7 +50,7 @@
         }
 
         .container > div:nth-child(odd) {
-                /* background-color: rgb(31, 230, 48); */
+                background-color: #1abc9c;
         }
 
         /* .container {
@@ -107,15 +108,15 @@
 </style>
 <body>
         <div class="container">
-                <div class="col1">Col 1</div>
-                <div class="col2">Col 2</div>
-                <div class="col3">Col 3</div>
-                <div class="col4">Col 4</div>
-                <div class="col5">Col 5</div>
-                <div class="col6"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, id!</p></div>
-                <div class="col7">Col 7</div>
-                <div class="col8">Col 8</div>
-                <div class="col9">Col 9</div>
+                <div class="col1">1</div>
+                <div class="col2">2</div>
+                <div class="col3">3</div>
+                <div class="col4">4</div>
+                <div class="col5">5</div>
+                <div class="col6">6</div>
+                <div class="col7">7</div>
+                <div class="col8">8</div>
+                <div class="col9">9</div>
         </div>  
 </body>
 </html>
